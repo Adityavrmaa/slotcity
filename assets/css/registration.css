@@ -1,0 +1,348 @@
+:root {
+    --login-bg: #232a3e;
+   --btn-color:#5555ff;
+   --text-color:#9aa4bf;
+  }
+  
+  
+  
+    @font-face {
+      font-family: loginfont;
+      src: url("/assets/fonts/TTSupermolotNeue-CondMed.ttf");
+    }
+  
+  
+  body {
+   
+    font-family: loginfont;
+    background-image: url(../img/bg.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+  }
+  
+  .background_color {
+    background-color: var(--login-bg);
+  }
+
+  .signup_form{
+    background-color: var(--login-bg);
+  }
+  
+  
+ 
+  
+  #floatingInput {
+    border: 3px solid var(--btn-color);
+    background-color: transparent;
+  }
+  
+  .btn-login {
+    background-color:  var(--btn-color);
+    color: white;
+    font-weight: 400;
+    line-height: 2.6rem;
+    padding: 0 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 0;
+  }
+  
+  .btn-login:hover {
+    background-color: rgb(0, 17, 255);
+    color: white;
+  }
+  
+  input{
+      color: rgb(255, 255, 255)!important;
+  }
+  span p{
+      position: relative;
+      margin: 2rem 0;
+  }
+  
+  
+  span p:before {
+      content: "";
+      height: 1px;
+      width: 43%;
+      background: var(--btn-color) ;
+      position: absolute;
+      top: 50%;
+
+      right: 0;
+  }
+  
+  span p:after {
+      left: 0;
+      content: "";
+      height: 1px;
+      width: 43%;
+      background: var(--btn-color) ;
+      position: absolute;
+      top: 50%;
+    
+  }
+  
+  .create_account_btn button{
+      background-color: transparent;
+      color: var(--btn-color);
+      border: 1px solid var(--btn-color);
+  }
+  
+  .create_account_btn button:hover{
+      background-color:var(--btn-color);
+      color: white;
+     
+  }
+  
+  .captcha{
+    display: grid;
+      justify-content: center;
+      margin: 2rem 0;
+  }
+  
+  /* ===================== */
+/* navbar csss */
+
+.background_color {
+  background-color: var(--login-bg);
+}
+
+::placeholder {
+  color: #000000;
+}
+
+#floatingInput {
+  border: 1px solid var(--btn-color);
+  background-color: transparent;
+}
+
+.btn-login {
+  background-color: var(--btn-color);
+  color: white;
+  font-weight: 400;
+  line-height: 2.6rem;
+  padding: 0 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 0;
+}
+
+.btn-login:hover {
+  background-color: rgb(0, 17, 255);
+  color: white;
+}
+
+input {
+  color: rgb(255, 255, 255) !important;
+}
+span p {
+  position: relative;
+  margin: 2rem 0;
+}
+
+span p:before {
+  content: "";
+  height: 1px;
+  width: 43%;
+  background: var(--btn-color);
+
+  position: absolute;
+  top: 50%;
+
+  right: 0;
+}
+
+span p:after {
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 43%;
+  background: var(--btn-color);
+  position: absolute;
+  top: 50%;
+  z-index: 6;
+}
+
+.create_account_btn button {
+  background-color: transparent;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+
+.create_account_btn button:hover {
+  background-color: var(--btn-color);
+  color: white;
+}
+
+.captcha {
+  display: grid;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1rem;
+}
+
+.form-floating {
+  color: #445278;
+}
+
+/* ==========navbar code=========== */
+nav {
+  background-color: var(--login-bg) !important;
+}
+
+::placeholder {
+  color: var(--text-mute);
+}
+input {
+  color: #232a3e;
+  border-radius: 0;
+}
+
+.form-control,
+.btn {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid var(--btn-color);
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
+.form-control:focus {
+  border-color: none !important;
+}
+
+input[type="search"]:focus {
+  border-right: none;
+}
+.search_header {
+  width: 45%;
+  margin-left: 6rem;
+}
+.search_header button {
+  padding: 0.438rem 2rem;
+  background-color: #22385c;
+  color: var(--text-mute);
+}
+
+.navbar-nav li {
+  padding: 0rem 1.6rem;
+
+}
+input[type="text"],
+textarea {
+  outline: none;
+  box-shadow: none !important;
+  /* border: 1px solid #ccc !important; */
+}
+.nav-item i {
+  font-size: 1.6rem;
+}
+.form-select{
+  color: #9aa4bf;
+  background-color: transparent!important;
+  border: 1px solid var(--btn-color)!important;
+  border-radius: 0!important;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  -ms-border-radius: 0!important;
+  -o-border-radius: 0!important;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.6;
+  filter: invert(0.8);
+}
+
+
+.nav-item:hover {
+  color: var(--btn-color);
+}
+
+.signin_btn button {
+  background-color: var(--btn-color);
+}
+
+.signin_btn button:hover {
+  background-color: transparent;
+}
+
+/* ========================= */
+.second_nav {
+  background-color: #202739 !important;
+}
+
+.second_nav .nav-item a:hover {
+  border-bottom: 1px solid var(--btn-color);
+}
+
+.dropdown-menu {
+  background-color: var(--login-bg);
+}
+
+.second_nav .navbar-nav li a {
+color: var(--text-mute);
+}
+
+
+/* end css navbar   */
+
+
+
+
+
+
+.form-check-input{
+border: 1px solid var(--btn-color);
+background: transparent;
+padding: 0.7rem;
+border-radius: none;
+cursor: pointer;
+
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check label{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    /* line-height: 15px; */
+}
+
+.form-check label a{
+   color: var(--btn-color);
+   text-decoration: underline;
+}
+
+.text-uppercase {
+    letter-spacing: 0.1rem;
+}
+
+.form-floating{
+    color: #445278;
+}
+
+
+#header {
+
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}

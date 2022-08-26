@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SLOT CITY</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- font awesome cdn link   -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- bootstap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+    <style>
+        .List-area-blog-right ul li {
+            background-color: transparent;
+        }
+
+        .List-area-blog-right .modtitle {
+            padding: 5px 10px;
+            background-color: rgb(93, 69, 233);
+            border-radius: 5px;
+        }
+
+        .article-sub-title span {
+            display: inline;
+            color: #777;
+            padding: 0 5px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+
+        <nav class="navbar d-flex navbar-expand-lg" id="navbar">
+            <div class="container">
+
+                <a class="navbar-brand"> <img src="./assets/img/logo.png" width="150px" alt="logo" id="logo"> </a>
+                <span class="Mobile_sidenav" onclick="openNav()"><i class="d-block bi bi-list"></i> </span>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+                    <form class="d-flex search_header ">
+                        <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search">
+                        <button class="btn  text-uppercase" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+                        <li class="nav-item">
+
+                            <a class="nav-link p-0 active" aria-current="page" href="./login.html"><i
+                                    class="bi bi-list-check d-block"></i>My purchases</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link p-0" href="./Favorites.html"> <i
+                                    class="bi bi-heart d-block"></i>Favorites</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link p-0" href="AddToCart.html"> <i
+                                    class="bi bi-cart-plus d-block"></i>Cart</a>
+                        </li>
+                        <li class="d-grid align-items-center signin_btn">
+                            <a href="login.html"> <button type="button "
+                                    class="px-4 py-2 btn btn-primary rounded-0">Sign
+                                    In</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- first navbar start   -->
+
+
+
+
+        <!-- second nav start    -->
+        <nav class="second_nav navbar navbar-expand-md">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="product.html">Store</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="slotTv.html">Slots Tv</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+
+                        <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Help Center</a>
+            </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-hover="dropdown">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Russian</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                                <li><a class="dropdown-item" href="#">Greek</a></li>
+                                <li><a class="dropdown-item" href="#">Italion</a></li>
+                                <li><a class="dropdown-item" href="#">French</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- end second navbar  -->
+
+
+
+    <!-------------------- mobile view code --------------------------------------->
+    <div id="mySidenav" class="sidenav" style="z-index: 99999;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link  " href="login.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="product.html">Product</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="slotTv.html">Slots Tv</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="./Favorites.html"> Favorites</a>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-hover="dropdown">
+                    Language
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Russian</a></li>
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    <li><a class="dropdown-item" href="#">Chinese</a></li>
+                    <li><a class="dropdown-item" href="#">Greek</a></li>
+                    <li><a class="dropdown-item" href="#">Italion</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!-------------------- mobile view code --------------------------------------->
+    <!-- ##### Blog Wrapper Start ##### -->
+    <div class="blog-wrapper section-padding-100 clearfix" style="margin-top: 14rem;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s"
+                        data-wow-duration="1000ms">
+                        <div class="col-12 col-md-12">
+                            <div class="article-title">
+                                <h3>Kire tuma demons vel eum iriure dolor sed diam nonumy eirmod</h3>
+                            </div>
+
+                            <div class="article-sub-title mb-3">
+                                <span class="article-author"><a
+                                        href="https://opencart.opencartworks.com/themes/so_sgame/layout2/index.php?route=extension/simple_blog/author&amp;simple_blog_author_id=1">Posted
+                                        by: Wash upito</a></span>
+                                <span class="article-date">Created Date: <b>03</b> Mar</span>
+                                <span class="article-comment">0 Comments</span>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="single-blog-thumbnail">
+                                    <img src="./assets/img/homemg/2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat temporibus
+                                    deleniti debitis sed beatae labore, mollitia dignissimos voluptates odit, totam,
+                                    omnis fugit minus sequi quasi dolores nesciunt atque ad ipsum. Illum voluptatibus
+                                    laboriosam quos vero maiores commodi itaque suscipit officiis enim, optio quia fugit
+                                    amet deleniti ab omnis consequatur nesciunt officia iure ex sapiente vitae. Porro
+                                    dolore laborum ad blanditiis eveniet. Alias beatae vero eaque! Quisquam possimus
+                                    odit dolorum exercitationem unde sunt distinctio vero quae voluptas minima! Modi
+                                    nisi reprehenderit accusamus ex alias, quis esse praesentium, consequatur iure autem
+                                    aliquid! Libero maiores, quos iusto molestiae dolor molestias quia doloremque.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam iure vero ullam
+                                    laudantium quis ipsam temporibus et quo tempore nemo deleniti fugit distinctio ipsum
+                                    maxime rem, eum aut at mollitia. </p>
+
+                            </div>
+
+                            <div class="col-12 col-md-12 mt-3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat temporibus
+                                    deleniti debitis sed beatae labore, mollitia dignissimos voluptates odit, totam,
+                                    omnis fugit minus sequi quasi dolores nesciunt atque ad ipsum. Illum voluptatibus
+                                    laboriosam quos vero maiores commodi itaque suscipit officiis enim, optio quia fugit
+                                    amet deleniti ab omnis consequatur nesciunt officia iure ex sapiente vitae. Porro
+                                    dolore laborum ad blanditiis eveniet. Alias beatae vero eaque! Quisquam possimus
+                                    odit dolorum exercitationem unde sunt distinctio vero quae voluptas minima! Modi
+                                    nisi reprehenderit accusamus ex alias, quis esse praesentium, consequatur iure autem
+                                    aliquid! Libero maiores, quos iusto molestiae dolor molestias quia doloremque.</p>
+                            </div>
+
+                            <div class="col-12 col-md-12 mt-3">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quam hic cupiditate
+                                    voluptatem fuga! Hic expedita ratione asperiores. Rem aperiam, at aspernatur
+                                    consequuntur laudantium reprehenderit doloribus quisquam ab ducimus, illum porro
+                                    voluptate fuga obcaecati. Saepe, aut enim, quia obcaecati dolorem a dolore porro eos
+                                    ipsum laboriosam, quidem nobis fugit similique natus deserunt. Autem ducimus
+                                    blanditiis qui iste veniam itaque dolores libero, harum eligendi doloremque ipsum
+                                    molestiae earum mollitia et unde sit eius modi fugit, dolorem reprehenderit? Rem
+                                    natus, earum voluptates omnis veniam sit itaque ducimus aperiam quas, ad vel minima!
+                                    At repudiandae sequi iure, sed eligendi, rem harum hic nemo omnis eum laboriosam
+                                    officia perferendis voluptates quae quo doloremque quis expedita facilis culpa ipsam
+                                    dolore mollitia temporibus veritatis? Facilis optio suscipit, omnis libero eaque,
+                                    repudiandae, veritatis rem voluptates tempore perspiciatis accusantium nemo? Tempora
+                                    praesentium nulla, quidem dolores quisquam ullam consectetur distinctio tempore et
+                                    corrupti nostrum nisi blanditiis quod odit ipsa repellendus, ducimus omnis
+                                    doloremque quae libero eaque molestiae natus perspiciatis.sint facilis provident nam
+                                    aliquid.
+                                    Temporibus quas sunt recusandae! Nam neque fuga quam consectetur corrupti tempore
+                                    sequi, eos odit quae molestias distinctio at officia cupiditate id. Rerum sapiente
+                                    doloribus quis fuga repudiandae delectus ut. Nobis quibusdam iste accusantium
+                                    mollitia, sequi magnam dignissimos ducimus iusto optio.</p>
+                            </div>
+
+                            <div class="col-12 col-md-12 mt-3">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quam hic cupiditate
+                                    voluptatem fuga! Hic expedita ratione asperiores. sint facilis provident nam
+                                    aliquid.
+                                    Temporibus quas sunt recusandae! Nam neque fuga quam consectetur corrupti tempore
+                                    sequi, eos odit quae molestias distinctio at officia cupiditate id. Rerum sapiente
+                                    doloribus quis fuga repudiandae delectus ut. Nobis quibusdam iste accusantium
+                                    mollitia, sequi magnam dignissimos ducimus iusto optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- ##### ==================Sidebar Area ======================##### -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="post-sidebar-area">
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <form class="d-flex  footer-btn">
+                                <input class="form-control " type="search" placeholder="Slot Game ?"
+                                    aria-label="Search">
+                                <button class="btn footer_btn text-uppercase" type="submit">Suscribe</button>
+                            </form>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <div class="List-area-blog-right">
+                            <div class="module blog-cate">
+                                <h3 class="modtitle"><span>Categories</span></h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item "> <a href="#" class=" active">Demo Category 1</a>
+
+                                    </li>
+                                    <li class="list-group-item"> <a href="#" class=" active">Demo Category 2</a>
+
+                                    </li>
+                                    <li class="list-group-item"> <a href="#" class=" active">Playstation</a>
+
+                                    </li>
+                                    <li class="list-group-item"> <a href="#" class=" active">Reviews</a>
+
+                                    </li>
+                                    <li class="list-group-item"> <a href="#" class=" active">Videos</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <div class="sidebar-widget-area">
+                            <h5 class="title">Latest Posts</h5>
+
+                            <div class="widget-content">
+
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="./assets/img/homemg/2.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">slot</a>
+                                        <h4><a href="#" class="post-headline">Lorem ipsum dolor sit amet.</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="./assets/img/homemg/2.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="./assets/img/homemg/2.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">Party people in the house</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Blog Post -->
+                                <div class="single-blog-post d-flex align-items-center widget-post">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <img src="img/blog-img/lp4.jpg" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#" class="post-tag">Lifestyle</a>
+                                        <h4><a href="#" class="post-headline">A sunday in the park</a></h4>
+                                        <div class="post-meta">
+                                            <p><a href="#">12 March</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Widget Area -->
+                        <!-- <div class="sidebar-widget-area">
+                        <h5 class="title">Tags</h5>
+                        <div class="widget-content">
+                            
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="col-12 col-md-4 col-lg-6">
+                <div class="post-sidebar-area">
+
+
+
+                    <!-- Widget Area -->
+                    <div class="sidebar-widget-area">
+                        <h5 class="title subscribe-title">Subscribe to my newsletter</h5>
+                        <div class="widget-content">
+                            <form action="#" class="newsletterForm">
+                                <label class="text-white" for="">Name</label>
+
+                                <input type="email" name="email" id="subscribesForm" placeholder="Your e-mail here">
+                                <label class="text-white" for="">Comment</label>
+                                <textarea class="col-12" rows="2" type="email" name="email"
+                                    id="subscribesForm"></textarea>
+
+                                <button type="submit" class="btn original-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Wrapper End ##### -->
+
+
+    <!-- ======= Footer ======= -->
+    <section class="section-footer bg-footer">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-3 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Website</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <div class="w-body-a">
+                                <ul class="list-unstyled">
+                                    <li class="item-list-a">
+                                        <i class="bi bi-chevron-right"></i> <a href="./index.html">Home</a>
+                                    </li>
+
+                                    <li class="item-list-a">
+                                        <i class="bi bi-chevron-right"></i> <a href="./contact.html">Contact</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="bi bi-chevron-right"></i> <a href="./helpcenter.html">Help center</a>
+                                    </li>
+                                    <li class="item-list-a">
+                                        <i class="bi bi-chevron-right"></i> <a href="./Affiliates.html">Affiliates</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3  section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Community</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <ul class="list-unstyled">
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="#">Social </a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="./slotTv.html" target="_blank">Slot
+                                        Tv</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="./SocialGaming.html">Social Gaming</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--business -->
+                <div class="col-sm-6 col-md-3  section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Business</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <ul class="list-unstyled">
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="#">Social </a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="./slotTv.html" target="_blank">Slot
+                                        Tv</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="./SocialGaming.html">Social Gaming</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 section-md-t3">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">Terms</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <ul class="list-unstyled">
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="./Terms&condition.html">Terms and
+                                        Conditions</a>
+                                </li>
+                                <li class="item-list-a">
+                                    <i class="bi bi-chevron-right"></i> <a href="./PrivacyPolicy.html">Privacy
+                                        Policy</a>
+                                </li>
+
+
+                            </ul>
+                            <div class="footer-text">
+                                <h4>Subscribe to our newsletter</h4>
+                                <p class="footer-text">Sign up for our weekly newsletter to get the latest news, updates
+                                    and amazing
+                                    offers.</p>
+                            </div>
+                            <form class="d-flex  footer-btn">
+                                <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn footer_btn text-uppercase" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="socials-a">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="bi bi-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright-footer">
+                        <p class="copyright color-text-a">
+                            &copy; Copyright
+                            <span class="color-a">ABC</span> All Rights Reserved.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer><!-- End  Footer -->
+
+    <div id="preloader"></div>
+
+
+    <!-- top to scrolling  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-3x fas fa-chevron-circle-up"></i></button>
+
+
+
+    <!--  JS Files -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!--  Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+
+    </script>
+
+    </section>
+</body>
+
+</html>

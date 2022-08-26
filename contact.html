@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SLOT CITY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- top to scrolling  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-3x fas fa-chevron-circle-up"></i></button>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- font awesome cdn link   -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- google fonts icons cdn  -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- bootstap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body>
+ <header id="header">
+
+    <nav class="navbar d-flex navbar-expand-lg" id="navbar">
+      <div class="container">
+      
+        <a  class="navbar-brand"> <img src="./assets/img/logo.png" width="150px"  alt="logo" id="logo"> </a>
+        <span class="Mobile_sidenav" onclick="openNav()"><i class="d-block bi bi-list"></i> </span>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+          <form class="d-flex search_header ">
+            <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search" >
+            <button class="btn  text-uppercase" type="submit" >Search</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+            <li class="nav-item">
+
+              <a class="nav-link p-0 active" aria-current="page" href="./login.html"><i
+                  class="bi bi-list-check d-block"></i>My purchases</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link p-0" href="./Favorites.html"> <i class="bi bi-heart d-block"></i>Favorites</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link p-0" href="AddToCart.html"> <i class="bi bi-cart-plus d-block"></i>Cart</a>
+            </li>
+            <li class="d-grid align-items-center signin_btn">
+              <a href="login.html"> <button type="button " class="px-4 py-2 btn btn-primary rounded-0">Sign
+                  In</button></a>
+            </li>
+            <!--profile upload dropdown -->
+            <li class="d-flex align-items-center">
+              <div class="dropdown profile_dropdown ">
+                  <div class="d-flex align-items-center">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  class="rounded-circle"
+                  style="width: 50px;margin-right: 5px;"
+                  alt="Avatar"
+                />
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  role="text"
+                  id="profileDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Profile
+                </a>
+              </div>
+
+                <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <hr class="text-white" />
+                  <li>
+                    <a class="dropdown-item text-white" href="myprofile.html">
+                      <i class="profileIcon bi bi-person-circle"></i> My
+                      Profile</a
+                    >
+                  </li>
+                  <hr class="text-white" />
+                  <li>
+                    <a class="dropdown-item text-white" href="order123.html">
+                      <i class="profileIcon bi bi-file-arrow-up-fill"></i>
+                      Order</a
+                    >
+                  </li>
+                  <hr class="text-white" />
+                  <li>
+                    <a class="dropdown-item text-white" href="wishlist.html">
+                      <i class="profileIcon bi bi-heart-fill"></i> Wishlist</a
+                    >
+                  </li>
+                  <hr class="text-white" />
+                  <li>
+                    <a class="dropdown-item text-white" href="notification.html">
+                      <i class="profileIcon bi bi-bell-fill"></i
+                      >Notification</a
+                    >
+                  </li>
+                  <hr class="text-white" />
+                  <li>
+                    <a class="dropdown-item text-white" href="logout.html"
+                      ><i class="profileIcon bi bi-box-arrow-right"></i
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- profile upload dropdown -->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- first navbar start   -->
+
+
+
+
+    <!-- second nav start    -->
+    <nav class="second_nav navbar navbar-expand-md">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="product.html">Store</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="slotTv.html">Slots Tv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Help Center</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-hover="dropdown">
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Russian</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                <li><a class="dropdown-item" href="#">Greek</a></li>
+                <li><a class="dropdown-item" href="#">Italion</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+                  
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  
+  <!-- end second navbar  -->
+
+  <!-------------------- mobile view code --------------------------------------->
+  <div id="mySidenav" class="sidenav" style="z-index: 99999;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  " href="login.html">Sign In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="product.html">Product</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="slotTv.html">Slots Tv</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="membership.html">Membership</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./Favorites.html"> Favorites</a>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" data-hover="dropdown">
+          Language
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Russian</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                <li><a class="dropdown-item" href="#">Greek</a></li>
+                <li><a class="dropdown-item" href="#">Italion</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <!-------------------- mobile view code --------------------------------------->
+
+
+  <!-- ======= Intro Single ======= -->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Contact US</h1>
+            <span class="color-text-a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, aperiam!</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end"
+            style="background-color: transparent!important;">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Contact
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Intro Single-->
+
+  <!-- ======= Contact Single ======= -->
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-map box">
+            <div id="map" class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 section-t8">
+          <div class="row">
+            <div class="col-md-7">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control form-control-lg form-control-a"
+                        placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input name="email" type="email" class="form-control form-control-lg form-control-a"
+                        placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="text" name="subject" class="form-control form-control-lg form-control-a"
+                        placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea name="message" class="form-control h-50" name="message" cols="45" rows="8"
+                        data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-12 text-center mt-5">
+                    <button type="submit" class="btn btn-a">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 section-md-t3">
+              <div class="icon-box section-b2">
+                <div class="icon-box-icon">
+                  <span class="ion-ios-paper-plane"></span>
+                </div>
+                <div class="icon-box-content table-cell">
+                  <div class="icon-box-title">
+                    <h4 class="icon-title">lorem lorem</h4>
+                  </div>
+                  <div class="icon-box-content">
+                    <p class="mb-1">Email.
+                      <span class="color-a">abc@example.com</span>
+                    </p>
+                    <p class="mb-1">Phone.
+                      <span class="color-a">+54 356 945234</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-box section-b2">
+                <div class="icon-box-icon">
+                  <span class="ion-ios-pin"></span>
+                </div>
+                <div class="icon-box-content table-cell">
+                  <div class="icon-box-title">
+                    <h4 class="icon-title">Find us in</h4>
+                  </div>
+                  <div class="icon-box-content">
+                    <p class="mb-1">
+                      lorem, 1233 10036,
+                      <br> UK
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-box">
+                <div class="icon-box-icon">
+                  <span class="ion-ios-redo"></span>
+                </div>
+                <div class="icon-box-content table-cell">
+                  <div class="icon-box-title">
+                    <h4 class="icon-title">Social networks</h4>
+                  </div>
+                  <div class="icon-box-content">
+                    <div class="socials-footer">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="text-info bi bi-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="text-info bi bi-instagram"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="text-info bi bi-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="text-info bi bi-pinterest" aria-hidden="true"></i>
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Contact Single-->
+
+
+
+  <!-- ======= Footer ======= -->
+  <section class="section-footer bg-footer">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+      
+        <div class="col-sm-12 col-md-3 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Website</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./index.html">Home</a>
+                  </li>
+
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./contact.html">Contact</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./helpcenter.html">Help center</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./Affiliates.html">Affiliates</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3  section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Community</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Social </a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./slotTv.html" target="_blank">Slot Tv</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./SocialGaming.html">Social Gaming</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!--business -->
+           <div class="col-sm-6 col-md-3  section-md-t3">
+            <div class="widget-a">
+              <div class="w-header-a">
+                <h3 class="w-title-a text-brand">Business</h3>
+              </div>
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Social </a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./slotTv.html" target="_blank">Slot Tv</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./SocialGaming.html">Social Gaming</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-12 col-md-3 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Terms</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./Terms&condition.html">Terms and Conditions</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./PrivacyPolicy.html">Privacy Policy</a>
+                </li>
+
+
+              </ul>
+              <div class="footer-text">
+                <h4>Subscribe to our newsletter</h4>
+                <p class="footer-text">Sign up for our weekly newsletter to get the latest news, updates and amazing
+                  offers.</p>
+              </div>
+              <form class="d-flex  footer-btn">
+                  <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search" >
+                  <button class="btn footer_btn text-uppercase" type="submit" >Subscribe</button>
+                </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <footer class="bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">ABC</span> All Rights Reserved.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+
+
+  <!-- top to scrolling  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-3x fas fa-chevron-circle-up"></i></button>
+
+
+
+  <!--  JS Files -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+
+  </script>
+
+  </section>
+</body>
+
+</html>

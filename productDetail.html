@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chaAuset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Product detail</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstap icon -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/productdetal.css">
+</head>
+
+<style>
+    nav {
+        background-color: transparent !important;
+    }
+
+    #header {
+        background-color: #232A3E;
+    }
+
+    /* 15-01-2022 new add on green color button  */
+    .click_to_download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #43A800;
+        border-radius: 10px;
+        border: none !important;
+        margin-top: 0.5rem;
+    }
+    
+
+    .like_icon > i
+    {
+        padding: 0 10px;
+        font-style: normal;
+    }
+
+    .like_icon span {
+        padding: 0 4px;
+    }
+    .fas span{
+      font-weight: lighter!important;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 575.98px) {
+        #Product {
+            margin-top: 10rem !important;
+        }
+
+        .Youtubevideo {
+            height: 200px !important;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: transparent;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-family: swiper-icons;
+            font-size: 0.8rem;
+        }
+
+        .sidebar-block-title table td {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
+<body>
+
+
+    <!-- ================== navbar   ===================== -->
+
+    <header id="header">
+
+        <nav class="navbar d-flex navbar-expand-lg" id="navbar">
+            <div class="container">
+
+                <a class="navbar-brand"> <img src="./assets/img/logo.png" width="150px" alt="logo" id="logo"> </a>
+                <span class="Mobile_sidenav" onclick="openNav()"><i class="d-block bi bi-list"></i> </span>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+                    <form class="d-flex search_header ">
+                        <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search">
+                        <button class="btn  text-uppercase" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+                        <li class="nav-item">
+
+                            <a class="nav-link p-0 active" aria-current="page" href="./login.html"><i
+                                    class="bi bi-list-check d-block"></i>My purchases</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link p-0" href="./Favorites.html"> <i
+                                    class="bi bi-heart d-block"></i>Favorites</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link p-0" href="AddToCart.html"> <i
+                                    class="bi bi-cart-plus d-block"></i>Cart</a>
+                        </li>
+                        <li class="d-grid align-items-center signin_btn">
+                            <a href="login.html"> <button type="button "
+                                    class="px-4 py-2 btn btn-primary rounded-0">Sign
+                                    In</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- first navbar start   -->
+
+
+
+
+        <!-- second nav start    -->
+        <nav class="second_nav navbar navbar-expand-md">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="aboutus.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="product.html">Store</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="slotTv.html">Slots Tv</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+
+                        <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Help Center</a>
+            </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-hover="dropdown">
+                                Language
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Russian</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                                <li><a class="dropdown-item" href="#">Greek</a></li>
+                                <li><a class="dropdown-item" href="#">Italion</a></li>
+                                <li><a class="dropdown-item" href="#">French</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- end second navbar  -->
+
+
+    <!-------------------- mobile view code --------------------------------------->
+    <div id="mySidenav" class="sidenav" style="z-index: 99999;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link  " href="login.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="product.html">Product</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="slotTv.html">Slots Tv</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="./Favorites.html"> Favorites</a>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-hover="dropdown">
+                    Language
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Russian</a></li>
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    <li><a class="dropdown-item" href="#">Chinese</a></li>
+                    <li><a class="dropdown-item" href="#">Greek</a></li>
+                    <li><a class="dropdown-item" href="#">Italion</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!-------------------- mobile view code --------------------------------------->
+
+    <!-- ==========================main code start here  ======================================== -->
+
+    <section id="Product" style="margin-top: 18rem; clear: both;">
+        <div class="mian-product-section">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-lg-8">
+
+                        <!--=================================================== left side ================================== -->
+                        <div class="container-fluid">
+                            <h4>Tribes of Midgard</h4>
+                            <div class="row">
+                                <div class="col-md-12 product-left mb-5 mb-lg-0">
+
+                                    <!-- slider section start here   -->
+                                    <div class="swiper-container product-slider mb-3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+
+
+                                                <video class="Youtubevideo" width="100%" height="450px" controls>
+                                                    <source src="./assets/video/1.mp4" type="video/mp4">
+                                                    <source src="./assets/video/1.mp4" type="video/ogg">
+
+                                                </video>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/2.jpg" alt="img" class="img-fluid">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/4.jpg" alt="img" class="img-fluid">
+                                            </div>
+
+                                            <!-- video slider -->
+                                            <div class="swiper-slide">
+                                                <div class="swiper-slide">
+                                                    <img src="assets/img/gameimg/1.jpg" alt="img" class="img-fluid">
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/5.jpg" alt="img" class="img-fluid">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/6.jpg" alt="img" class="img-fluid">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-container product-thumbs">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/1.jpg" alt="img" class="img-fluid">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/2.jpg" alt="img" class="img-fluid">
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/4.jpg" alt="img" class="img-fluid">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/1.jpg" alt="img" class="img-fluid">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/5.jpg" alt="img" class="img-fluid">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/gameimg/6.jpg" alt="img" class="img-fluid">
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- slider image end section   -->
+
+                                <!-- second section about product start   -->
+                                <div class="col-md-12 col-sm-12 product-left mt-3 ">
+                                    <div class="">
+                                        <div class="sidebar-block sidebar-product-info mt-5 "
+                                            style="background-color: #232A3E;">
+                                            <div class="sidebar-block-title">About this game</div>
+
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                                reiciendis nisi, nam eveniet molestias maxime minima aspernatur illum
+                                                ipsa ipsum!</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- second section about product start   -->
+
+
+
+                                <!-- System requirements -->
+                                <div class="col-md-12 product-left  mb-lg-0">
+
+                                    <div class="system-section">
+                                        <div class="sidebar-block sidebar-product-info mt-5 "
+                                            style="background-color: #232A3E;">
+
+                                            <div class="sidebar-block-title">System requirements</div>
+
+                                            <table class="table table-borderless">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Minimum:</th>
+                                                        <th scope="col">Recommended:</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">OS:</th>
+                                                        <td>Windows 7 64 Bits</td>
+                                                        <td>Windows 7 64 Bits</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Processor:</th>
+                                                        <td>Intel Quad Core i5-2300 or AMD FX-6300</td>
+                                                        <td>Intel Quad Core i5-2300 or AMD FX-6300</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Memory:</th>
+                                                        <td>8 GB RAM</td>
+                                                        <td>8 GB RAM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Graphics:</th>
+                                                        <td>Nvidia GeForce GTX 560 (1GB) or AMD Radeon HD 7770 (1GB)
+                                                        </td>
+                                                        <td>Nvidia GeForce GTX 780 Ti/970 (High Settings) and 1070
+                                                            (Ultra Settings) or AMD R9 290/AMD RX480 (High Settings)
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Directx:</th>
+                                                        <td>Version 11</td>
+                                                        <td>Version 11</td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <th scope="row">Network:</th>
+                                                        <td>Broadband Internet connection</td>
+                                                        <td>Broadband Internet connection</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Sound card:</th>
+                                                        <td>DirectX® Compatible</td>
+                                                        <td>DirectX® Compatible</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- System requirements start here -->
+
+                                <div class="col-md-12 product-left mt-1 mb-lg-0">
+                                    <div class="system-section">
+                                        <div class="sidebar-block sidebar-product-info mt-5 "
+                                            style="background-color: #232A3E;">
+                                            <div class="sidebar-block-title">System requirements</div>
+                                            <div class="System-requirements">
+                                                <p>Nothing has been said about this yet. You will literally be the first
+                                                    person to say something about it.</p>
+                                                <p>Just Sign In or Create account and make history!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- System requirements start end -->
+
+
+                            </div>
+                        </div>
+                        <!-- =========================== left side ==================================== -->
+
+                    </div>
+
+                    <!-- ======================================= right side =========================================== -->
+                    <div class="col-md-4">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12" style="background-color: #232A3E;">
+                                    <!-- main code start here   -->
+                                    <div class="sidebar-product-info">
+                                        <div class="catalog-item-container">
+                                            <div class=" mt-3">
+                                                <img class="img-fluid" src="./assets/img/homemg/c2.jpg" alt="">
+                                            </div>
+                                            <div class="catalog-item--description d-flex">
+                                                <div class="catalog-item--full-price"> <s> ₹699.00 </s></div>
+                                                <span>₹450.86</span>
+                                            </div>
+                                            <div class="catalog-item-button my-3 d-flex">
+                                                <button class="btn  product-addtocard" data-bs-toggle="modal"
+                                                    data-bs-target="#Addtocard1">Add To Cart</button>
+                                                <i class="bi bi-suit-heart add_to_favorite" data-bs-toggle="modal"
+                                                    data-bs-target="#modal1"></i>
+                                            </div>
+                                            <form action="" method="POST" class="product-pricedrop-alert-form">
+                                                <div class="form-group d-flex justify-content-between">
+                                                    <div class="checkbox ">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="exampleCheck1">
+                                                        <label class="ms-2 mt-1" for="exampleCheck1">Alert me on price
+                                                            drops</label>
+                                                    </div>
+                                                    <!-- add on  15-.1-2022 -->
+                                                    <div class="share_btn">
+                                                        <button class="btn border-0" style="border: none!important;"> <i
+                                                                class="text-white bi bi-share-fill"></i></button>
+                                                    </div>
+                                                    <!-- add on  15-.1-2022 -->
+
+                                                </div>
+                                            </form>
+                                            <!-- add on  15-.1-2022 -->
+
+                                            <div class="product-activation-info">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="product-activation-info--title">Activation</div>
+                                                        <div class="product-activation-info--item"><span>DRM</span>
+                                                            Steam &nbsp; &nbsp; <a href="/support/activations/steam/"
+                                                                target="_new">
+                                                                activation guide
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="product-activation-info--item">
+                                                            <span>Platform</span>PC
+                                                        </div>
+                                                        <div class="product-activation-info--item"><span>Activates in
+                                                                India</span><img src="https://flagcdn.com/in.svg"
+                                                                width="24" alt=""></div>
+                                                        <a class="product-activation-info--regions-button"
+                                                            id="regions-button" href="#" data-title="Hide regions">Show
+                                                            regions</a>
+                                                    </div>
+                                                    <div class="col  ">
+                                                        <button class="btn text-white click_to_download">
+                                                            <img width="25%"
+                                                                src="/assets/img/video section/right-arrows.png" alt="">
+
+                                                            <span> click here to DOWNLOAD</span>
+                                                            <img width="25%"
+                                                                src="/assets/img/video section/downloading-file.png"
+                                                                alt="">
+
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="like_icon py-4">
+                                                    <i class="bi bi-hand-thumbs-up font-initial"> <span> 1k </span></i>
+                                                    <i class="bi bi-eye"><span> 45 </span></i>
+                                                    <i class="fas fa-share"> <span> SHARE </span></i>
+                                                 
+                                                </div>
+
+
+
+                                            </div>
+                                            <!-- add on  15-.1-2022 -->
+
+
+                                        </div>
+                                    </div>
+                                    <!-- main code start end   -->
+                                </div>
+                                <!-- ====== new  Game details================ -->
+                                <div class="sidebar-block sidebar-product-info mt-5 "
+                                    style="background-color: #232A3E;">
+                                    <div class="sidebar-block-title">Game details</div>
+                                    <ul class="sidebar-product-info--list sidebar-product-info--overview">
+                                        <li> Genre
+                                            <div class="value">
+                                                <a href="#" title="Action">Action</a>,
+                                                <a href="#" title="Adventure">Adventure</a>,
+                                                <a href="#" title="Indie">Indie</a>,
+                                                <a href="#" title="RPG">RPG</a>
+                                            </div>
+                                        </li>
+                                        <li>Release date<div class="value color-white">July 27, 2021</div>
+                                        </li>
+                                        <li>Publisher<div class="value">Gearbox Publishing LLC</div>
+                                        </li>
+                                        <li>Game developer<div class="value">Norsfell</div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- ====== new  Game details================ -->
+
+
+                                <!-- score section start   -->
+                                <div class="sidebar-block sidebar-product-info" style="background-color: #232A3E;">
+                                    <div class="sidebar-block-title ">Score</div>
+                                    <div class="sidebar-product-info--rating">
+                                        <div class="rating-title ">GamersGate score</div>
+                                        <div class="my-2 fs-1">0.00 <span class="star-icon"><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                    class="bi bi-star-fill"></i></span></div>
+                                        <div class="rating-desc">based on 0 ratings</div>
+                                    </div>
+                                </div>
+
+                                <!-- score section end -->
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- ======================================= right side end =========================================== -->
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- ===============game more section   =========================-->
+
+        <!-- ======= Agents Section ======= -->
+        <section class="section-agents my-2">
+            <div class="container p-4" data-aos="fade-up" style="background-color: #232A3E;">
+                <div class="dgdfg">
+                    <div class="sidebar-block-title ">Games we think you’ll like</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="overlay-cart">
+                                    <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                                    <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                        data-bs-target="#Addtocard1">Add To
+                                        Cart</button>
+                                </div>
+                                <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                <!-- overlay  price point  -->
+                                <div class="price position-absolute ">
+                                    <div class="main-text-price">
+                                        <div class="price-text">
+
+                                            <h3 class="price-text-heading">Ring</h3>
+                                        </div>
+                                        <div class="price-rate">
+                                            <span><s>₹ 699.99</s></span>
+                                            <h3 class="price-text-number">₹ 855</h3>
+                                        </div>
+                                        <!-- overlay  price point  -->
+                                    </div>
+                                </div>
+
+                                <div class="catalog_item_product_labels">
+                                    <ul class="list-unstyled">
+                                        <li class=""><span>Preorder</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- <div class="offer-tag">
+                <span><s>New ralease</s></span>
+              </div> -->
+
+
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="overlay-cart">
+                                    <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                                    <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                        data-bs-target="#Addtocard1">Add To
+                                        Cart</button>
+                                </div>
+                                <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                <!-- overlay  price point  -->
+                                <div class="price position-absolute ">
+                                    <div class="main-text-price">
+                                        <div class="price-text">
+
+                                            <h3 class="price-text-heading">Ring</h3>
+                                        </div>
+                                        <div class="price-rate">
+                                            <span><s>₹ 699.99</s></span>
+                                            <h3 class="price-text-number">₹ 855</h3>
+                                        </div>
+                                        <!-- overlay  price point  -->
+                                    </div>
+                                </div>
+
+                                <div class="catalog_item_product_labels">
+                                    <ul class="list-unstyled">
+                                        <li class=""><span>New Release</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="overlay-cart">
+                                    <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                                    <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                        data-bs-target="#Addtocard1">Add To
+                                        Cart</button>
+                                </div>
+                                <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                <!-- overlay  price point  -->
+                                <div class="price position-absolute ">
+                                    <div class="main-text-price">
+                                        <div class="price-text">
+
+                                            <h3 class="price-text-heading">Ring</h3>
+                                        </div>
+                                        <div class="price-rate">
+                                            <span><s>₹ 699.99</s></span>
+                                            <h3 class="price-text-number">₹ 855</h3>
+                                        </div>
+                                        <!-- overlay  price point  -->
+                                    </div>
+                                </div>
+
+                                <div class="catalog_item_product_labels">
+                                    <ul class="list-unstyled">
+                                        <li class=""><span>New Release</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="overlay-cart">
+                                    <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                                    <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                        data-bs-target="#Addtocard1">Add To
+                                        Cart</button>
+                                </div>
+                                <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                <!-- overlay  price point  -->
+                                <div class="price position-absolute ">
+                                    <div class="main-text-price">
+                                        <div class="price-text">
+
+                                            <h3 class="price-text-heading">Ring</h3>
+                                        </div>
+                                        <div class="price-rate">
+                                            <span><s>₹ 699.99</s></span>
+                                            <h3 class="price-text-number">₹ 855</h3>
+                                        </div>
+                                        <!-- overlay  price point  -->
+                                    </div>
+                                </div>
+
+                                <div class="catalog_item_product_labels">
+                                    <ul class="list-unstyled">
+                                        <li class=""><span>New Release</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="thumbnail">
+                                    <div class="overlay-cart">
+                                        <i class="bi bi-suit-heart " data-bs-toggle="modal"
+                                            data-bs-target="#modal1"></i>
+                                        <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                            data-bs-target="#Addtocard1">Add To
+                                            Cart</button>
+                                    </div>
+                                    <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                    <!-- overlay  price point  -->
+                                    <div class="price position-absolute ">
+                                        <div class="main-text-price">
+                                            <div class="price-text">
+
+                                                <h3 class="price-text-heading">Ring</h3>
+                                            </div>
+                                            <div class="price-rate">
+                                                <span><s>₹ 699.99</s></span>
+                                                <h3 class="price-text-number">₹ 855</h3>
+                                            </div>
+                                            <!-- overlay  price point  -->
+                                        </div>
+                                    </div>
+                                    <div class="catalog_item_product_labels">
+                                        <ul class="list-unstyled">
+                                            <li class=""><span>New Release</span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="thumbnail">
+                                    <div class="overlay-cart">
+                                        <i class="bi bi-suit-heart " data-bs-toggle="modal"
+                                            data-bs-target="#modal1"></i>
+                                        <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                            data-bs-target="#Addtocard1">Add To
+                                            Cart</button>
+                                    </div>
+                                    <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                    <!-- overlay  price point  -->
+                                    <div class="price position-absolute ">
+                                        <div class="main-text-price">
+                                            <div class="price-text">
+
+                                                <h3 class="price-text-heading">Ring</h3>
+                                            </div>
+                                            <div class="price-rate">
+                                                <span><s>₹ 699.99</s></span>
+                                                <h3 class="price-text-number">₹ 855</h3>
+                                            </div>
+                                            <!-- overlay  price point  -->
+                                        </div>
+                                    </div>
+                                    <div class="catalog_item_product_labels">
+                                        <ul class="list-unstyled">
+                                            <li class=""><span>New Release</span></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="overlay-cart">
+                                    <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                                    <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                        data-bs-target="#Addtocard1">Add To
+                                        Cart</button>
+                                </div>
+                                <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                <!-- overlay  price point  -->
+                                <div class="price position-absolute ">
+                                    <div class="main-text-price">
+                                        <div class="price-text">
+
+                                            <h3 class="price-text-heading">Ring</h3>
+                                        </div>
+                                        <div class="price-rate">
+                                            <span><s>₹ 699.99</s></span>
+                                            <h3 class="price-text-number">₹ 855</h3>
+                                        </div>
+                                        <!-- overlay  price point  -->
+                                    </div>
+                                </div>
+
+                                <div class="catalog_item_product_labels">
+                                    <ul class="list-unstyled">
+                                        <li class=""><span>New Release</span></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col-md-3">
+                        <figure>
+                            <div class="thumbnail">
+                                <div class="overlay-cart">
+                                    <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                                    <button class="btn  addtoard_btn" data-bs-toggle="modal"
+                                        data-bs-target="#Addtocard1">Add To
+                                        Cart</button>
+                                </div>
+                                <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                                <!-- overlay  price point  -->
+                                <div class="price position-absolute ">
+                                    <div class="main-text-price">
+                                        <div class="price-text">
+
+                                            <h3 class="price-text-heading">Ring</h3>
+                                        </div>
+                                        <div class="price-rate">
+                                            <span><s>₹ 699.99</s></span>
+                                            <h3 class="price-text-number">₹ 855</h3>
+                                        </div>
+                                        <!-- overlay  price point  -->
+                                    </div>
+                                </div>
+
+                                <div class="catalog_item_product_labels">
+                                    <ul class="list-unstyled">
+                                        <li class=""><span>New Release</span></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Agents Section -->
+
+        <!-- ===============================end more section ======================================= -->
+    </section>
+
+
+
+    <!-- ==========================main code start here  ======================================== -->
+
+
+
+    <div id="preloader"></div>
+
+    <!-- top to scrolling  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-3x fas fa-chevron-circle-up"></i></button>
+
+
+
+    <!--  JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!--  Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1200,
+        })
+
+    </script>
+
+    <script>
+        /* product left start */
+        if ($(".product-left").length) {
+            var productSlider = new Swiper('.product-slider', {
+                spaceBetween: 0,
+                centeredSlides: false,
+                loop: true,
+                direction: 'horizontal',
+                loopedSlides: 5,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                resizeObserver: true,
+            });
+            var productThumbs = new Swiper('.product-thumbs', {
+                spaceBetween: 0,
+                centeredSlides: true,
+                loop: true,
+                slideToClickedSlide: true,
+                direction: 'horizontal',
+                slidesPerView: 5,
+                loopedSlides: 5,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            productSlider.controller.control = productThumbs;
+            productThumbs.controller.control = productSlider;
+
+
+
+
+        }
+	/* 	product left end */
+    </script>
+</body>
+
+</html>

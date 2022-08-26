@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chaAuset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SLOT CITY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstap icon -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/SlotTv.css">
+</head>
+
+<style>
+  nav {
+    background-color: transparent !important;
+  }
+
+  #header {
+    background-color: #232A3E;
+  }
+
+
+  .search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+  }
+
+  .search input {
+    height: 50px;
+    text-indent: 30px;
+    border: 2px solid #d6d4d4
+  }
+
+  .search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+  }
+
+  .search .bi-geo-alt-fill {
+    position: absolute;
+    top: 15px;
+    left: 16px
+  }
+
+  .search .bi-search {
+    position: absolute;
+    top: 15px;
+    right: 16px
+  }
+
+  .dropdown-system-option li {
+    display: flex;
+    align-items: end;
+    color: white;
+  }
+
+  .dropdown-system-option li:hover {
+    border: none !important;
+  }
+
+  .dropdown-system-option li span {
+    padding-left: 10px;
+  }
+
+  .dropdown-system-option {
+    padding: 10px 15px;
+  }
+
+  .thumbnail .addtoard_btn {
+    top: 40%;
+    left: 8%;
+  }
+
+  .overlay-cart .bi-suit-heart {
+    display: flex;
+    top: 10px;
+    font-size: 1.7rem;
+  }
+
+  .addtoard_btn2 {
+    right: 8%;
+    top: 40%;
+    position: absolute;
+    color: white;
+  }
+
+  .addtoard_btn2:hover {
+    color: #fff;
+  }
+
+  .price-text h3,
+  .price-rate h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 992px) {
+    .overlay-cart .bi-suit-heart {
+      display: flex;
+      top: 10px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .overlay-cart .bi-suit-heart {
+      display: flex;
+      top: 1rem;
+    }
+  }
+</style>
+
+<body>
+
+
+  <!-- ================== navbar   ===================== -->
+
+  <header id="header">
+
+    <nav class="navbar d-flex navbar-expand-lg" id="navbar">
+      <div class="container">
+
+        <a class="navbar-brand"> <img src="./assets/img/logo.png" width="150px" alt="logo" id="logo"> </a>
+        <span class="Mobile_sidenav" onclick="openNav()"><i class="d-block bi bi-list"></i> </span>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+          <form class="d-flex search_header ">
+            <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search">
+            <button class="btn  text-uppercase" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+            <li class="nav-item">
+
+              <a class="nav-link p-0 active" aria-current="page" href="./login.html"><i
+                  class="bi bi-list-check d-block"></i>My purchases</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link p-0" href="./Favorites.html"> <i class="bi bi-heart d-block"></i>Favorites</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link p-0" href="AddToCart.html"> <i class="bi bi-cart-plus d-block"></i>Cart</a>
+            </li>
+            <li class="d-grid align-items-center signin_btn">
+              <a href="login.html"> <button type="button " class="px-4 py-2 btn btn-primary rounded-0">Sign
+                  In</button></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- first navbar start   -->
+
+
+
+
+    <!-- second nav start    -->
+    <nav class="second_nav navbar navbar-expand-md">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="product.html">Store</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="slotTv.html">Slots Tv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Help Center</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-hover="dropdown">
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Russian</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                <li><a class="dropdown-item" href="#">Greek</a></li>
+                <li><a class="dropdown-item" href="#">Italion</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- end second navbar  -->
+
+
+  <!-------------------- mobile view code --------------------------------------->
+  <div id="mySidenav" class="sidenav" style="z-index: 99999;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  " href="login.html">Sign In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="product.html">Product</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="slotTv.html">Slots Tv</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="membership.html">Membership</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./Favorites.html"> Favorites</a>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" data-hover="dropdown">
+          Language
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">Russian</a></li>
+          <li><a class="dropdown-item" href="#">Arabic</a></li>
+          <li><a class="dropdown-item" href="#">Chinese</a></li>
+          <li><a class="dropdown-item" href="#">Greek</a></li>
+          <li><a class="dropdown-item" href="#">Italion</a></li>
+          <li><a class="dropdown-item" href="#">French</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <!-------------------- mobile view code --------------------------------------->
+
+  <!-- ======= Intro Section ======= -->
+  <div class="">
+    <div class="intro intro-carousel swiper ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide carousel-item-a intro-item bg-image"
+          style="background-image: url(assets/img/homemg/1.png)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 ">
+                    <div class="intro-body ">
+                      <p class="intro-title-topanimate__zoomIn animate__animated ">Lorem, ipsum
+                        <br> dolor
+                      </p>
+                      <h1 class="intro-title mb-4 animate__zoomIn animate__animated ">
+                        <span class="color-b ">Lorem </span> ipsum
+                        <br> dolor sit.
+                      </h1>
+                      <p class="intro-subtitle intro-price animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#"><span class="price-a ">Click Here</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide carousel-item-a intro-item bg-image"
+          style="background-image: url(assets/img/homemg/2.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="intro-body">
+                      <p class="intro-title-top">Lorem ipsum
+                        <br> ipsum
+                      </p>
+                      <h1 class="intro-title mb-4">
+                        <span class="color-b">lorem </span> ipsum
+                        <br> Lorem ipsum dolor
+                      </h1>
+                      <p class="intro-subtitle intro-price">
+                        <a href="#"><span class="price-a">Click Here </span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide carousel-item-a intro-item bg-image"
+          style="background-image: url(assets/img/homemg/3.jpg)">
+          <div class="overlay overlay-a"></div>
+          <div class="intro-content display-table">
+            <div class="table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="intro-body">
+                      <p class="intro-title-top">lorem ipsum
+                        <br> ipsum
+                      </p>
+                      <h1 class="intro-title mb-4">
+                        <span class="color-b">lorem </span> Lorem
+                        <br> ipsum dolor sit amet
+                      </h1>
+                      <p class="intro-subtitle intro-price">
+                        <a href="#"><span class="price-a">Click Here</span></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div><!-- End Intro Section -->
+  </div>
+
+
+
+
+
+
+
+
+  <!-- login  -->
+
+  <main id="main" style="margin-top: 1rem;">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single product_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Store</h1>
+              <!-- <span class="color-text-a">Grid Properties</span> -->
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end bg-transparent">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Product
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= Property Grid ======= -->
+
+
+    <section class="section-agents section-product-slider">
+      <div class="container">
+        <div class="row bg-color-side">
+          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3">
+
+            <div class="containe-fluid mb-3">
+              <div class="d-flex justify-content-between">
+                <div class="">
+                  <p>Refine Your Search</p>
+                </div>
+                <button class="btn bg-transparent text-danger ">Reset</button>
+              </div>
+            </div>
+
+            <!-- <div class="containe-fluid mb-3">
+              <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-12">
+                  <div class="search"><i class="bi bi-geo-alt-fill"></i><input type="text" class="form-control"
+                      placeholder="Enter your pincode"><i class="bi bi-search"></i> </div>
+                </div>
+              </div>
+            </div> -->
+
+
+            <div class="containe-fluid mb-3">
+              <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-12">
+                  <div class="search"><input type="text" class="form-control" placeholder="Search by product name"
+                      style="text-indent: 3px;"><i class="bi bi-search"></i> </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="main-filter">
+
+
+
+
+              <!-- ============  accordian sidebar start ================= -->
+
+
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <span><i class="bi bi-currency-exchange"></i></span> price
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <!-- ================== -->
+                      <form>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">Discounted</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">Under ₹ 1000</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">Under ₹ 1500</label>
+                        </div>
+                      </form>
+                      <!-- =======input box================ -->
+                      <div class="d-flex with-button">
+                        <input class="form-control me-3" type="number" autocomplete="off" placeholder="₹ min">
+                        <input class="form-control me-2 " type="number" autocomplete="off" placeholder="₹ max">
+
+
+                        <button class="btn " type="submit">Go</button>
+                      </div>
+
+
+                      <!-- ============================== -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span><i class="bi bi-controller"></i></span> Platform
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <!-- ================== -->
+                      <form>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">PC</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">Mac</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">Linux</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">Xbox</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label mt-1 ms-3" for="exampleCheck1">PSN</label>
+                        </div>
+                      </form>
+                      <!-- ======================= -->
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="Recently-view p-3">
+                  <div class="Recently-heading">
+                    <p> <i class="bi bi-arrow-repeat"></i> <span> Recently viewed </span></p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="Recently-image d-flex align-items-end mt-3">
+                      <img
+                        src="https://gamersgatep.imgix.net/b/b/c/06b263a270e0172b76874442ff39710bb4a9fcbb.jpg?auto=format&w=66"
+                        alt="">
+                      <p>Resident Evil Village</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <!-- ============================= -->
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-9 col-sm-12">
+            <div class="right-section">
+              <!-- ===================== end left section ======================================== -->
+              <!--=============================    right section start  ========================================-->
+
+
+              <!-- ======= Agents Section ======= -->
+              <section class="section-agents">
+                <div class="container" data-aos="fade-up">
+
+                  <div class="row">
+
+                    <div class="py-3 d-flex justify-content-between">
+                      <p>SlotCity</p>
+                      <div class="title-box d-flex">
+
+                        <div class="dropdown me-4">
+                          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="border: none!important;;">
+                            PlatForm
+                          </a>
+                          <ul class="dropdown-menu dropdown-system-option" aria-labelledby="dropdownMenuLink">
+                            <li> <input type="checkbox" class="form-check-input" id="exampleCheck1"> <span>Pc</span>
+                            </li>
+                            <li> <input type="checkbox" class="form-check-input" id="exampleCheck1"> <span>Mac</span>
+                            </li>
+
+                            <li> <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <span>Windows</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="left_site d-flex">
+                          <div class="btn-group">
+                            <button style="border: none!important;" class="me-4 btn btn-sory-by dropdown-toggle"
+                              type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                              aria-expanded="false">
+                              Sort By
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                              <li><a class="dropdown-item" href="#">Alphabatcally</a></li>
+                              <li><a class="dropdown-item" href="#">PriceO(low-high)</a></li>
+                              <li><a class="dropdown-item" href="#">PriceO(high-low)</a></li>
+                            </ul>
+                          </div>
+
+
+                          <!-- <div class="box-fill-item me-2">
+                                      <p> view <i class=" ms-2 bi bi-grid-3x3-gap-fill"></i></p>
+                                    </div>
+
+                                    <div class="box-fill-item2 me-3">
+                                      <p> <i class="bi bi-distribute-vertical"></i></p>
+                                    </div> -->
+
+
+                          <div class="show-item-number">
+                            <div class="btn-group ">
+                              <p class="me-3">Show</p>
+                              <!-- <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                            </div> -->
+                              <select id="gender1 ">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- end -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3 clearfix">
+
+
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart " data-bs-toggle="modal" data-bs-target="#modal1"></i>
+                            <button class="btn btn-sm   addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+                          </div>
+
+
+                          <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+                            </div>
+                          </div>
+
+                          <!-- <div class="offer-tag">
+                            <span><s>New ralease</s></span>
+                          </div> -->
+
+
+                        </div>
+
+                      </figure>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+
+                          </div>
+
+                          <img src="./assets/img/homemg/c1.jpg" alt="" class="img-b img-fluid">
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+
+                            </div>
+                          </div>
+                      </figure>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm  addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+                          </div>
+                          <img src="./assets/img/homemg/c3.jpg" alt="" class="img-b img-fluid">
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+
+                            </div>
+                      </figure>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm  addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+                          </div>
+                          <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+                            </div>
+                      </figure>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm   addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+
+                          </div>
+                          <img src="./assets/img/homemg/c1.jpg" alt="" class="img-b img-fluid">
+
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+                            </div>
+                      </figure>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm  addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+
+                          </div>
+
+                          <img src="./assets/img/homemg/c3.jpg" alt="" class="img-b img-fluid">
+
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+                            </div>
+                      </figure>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm  addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard1">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+
+                          </div>
+
+                          <img src="./assets/img/homemg/c2.jpg" alt="" class="img-b img-fluid">
+
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+                            </div>
+                      </figure>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                      <figure>
+                        <div class="thumbnail">
+                          <div class="overlay-cart">
+                            <i class="bi bi-suit-heart" data-bs-toggle="modal" data-bs-target="#modal1"></i>
+
+                            <button class="btn btn-sm  addtoard_btn" data-bs-toggle="modal"
+                              data-bs-target="#Addtocard8">Add To
+                              Cart</button>
+                            <a href="productDetail.html"> <button class="btn btn-sm   addtoard_btn2">More
+                                Info</button></a>
+
+                          </div>
+
+                          <img src="./assets/img/homemg/c1.jpg" alt="" class="img-b img-fluid">
+
+                          <!-- overlay  price point  -->
+                          <div class="price position-absolute ">
+                            <div class="main-text-price">
+                              <div class="price-text">
+
+                                <h3 class="price-text-heading">Ring</h3>
+                              </div>
+                              <div class="price-rate">
+                                <span><s>₹ 699.99</s></span>
+                                <h3 class="price-text-number">₹ 855</h3>
+                              </div>
+                              <!-- overlay  price point  -->
+                            </div>
+                      </figure>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- ===============pagination start here =================== -->
+                <div class="container py-4">
+                  <nav aria-label="Page navigation example pagination bg-transparent"
+                    style="background-color: transparent!important;">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- ==================pagination end here====================== -->
+              </section><!-- End Agents Section -->
+
+
+              <!-- ======================================= -->
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section><!-- End Agents Section -->
+    <!-- heart click modal ===================== -->
+
+
+    <!--============ add to cart click modal code  ===========-->
+    <div class="modal fade" id="Addtocard1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Product added to cart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="addtocart d-flex justify-content-between">
+              <div class="d-flex">
+                <img width="150px" src="./assets/img/homemg/3.jpg" alt="">
+                <h5 class="ms-3">Lorem, ipsum.</h5>
+              </div>
+              <div class="addtocart-rupee d-flex">
+                <h5>₹547.50</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue shopping</button>
+            <a href="./AddToCart.html"><button type="button" class="btn btn-primary">View Cart</button></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--============ add to cart click modal code  ===========-->
+
+
+    <!-- =============== heart click open modal============= -->
+
+    <!-- modal 1 -->
+    <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Just click to add a game to favo... wait a second, you are not logged in! You'll need to register or log
+              in to do that!</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <a href="./login.html"><button type="button" class="btn btn-primary">sign In</button></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end  modal 1 -->
+
+    <!-- product slider star here   -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- free Assessment 4th section start0
+     here  -->
+  <header class="bg_section" id="bg-section " data-aos="zoom-in" style="z-index: 1;">
+    <div class="overlay"></div>
+    <video width="100%" height="100%" playsinline="playsinline" muted="muted" loop="loop" controls>
+      <source src="./assets/video/1.mp4" type="video/mp4">
+      <source src="./assets/video/1.mp4" type="video/ogg">
+    </video>
+
+    <div class="container h-100 assessment_heading">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="fw-bolder ">The Best Gaming Website</h1>
+
+          <h3 class="fw-lighter">Measuring the WHAT,
+            WHY & HOW of Personal <br> Performance </h3>
+          <a href="#" target="_blank"><button class="text-white btn home-button1  fs-4 mt-3">Click
+              me</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ------------------end video sectionn -->
+  <!-- ======= Footer ======= -->
+  <section class="section-footer bg-footer">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-2 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Website</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./index.html">Home</a>
+                  </li>
+
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./contact.html">Contact</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./helpcenter.html">Help center</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="./Affiliates.html">Affiliates</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3  section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Community</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Social </a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="/slotTv.html" target="_blank">Slot Tv</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./SocialGaming.html">Social Gaming</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--business -->
+        <div class="col-sm-6 col-md-3  section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Business</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Social </a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./slotTv.html" target="_blank">Slot Tv</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./SocialGaming.html">Social Gaming</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Terms</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./Terms&condition.html">Terms and Conditions</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="./PrivacyPolicy.html">Privacy Policy</a>
+                </li>
+
+
+              </ul>
+              <div class="footer-text">
+                <h4>Subscribe to our newsletter</h4>
+                <p class="footer-text">Sign up for our weekly newsletter to get the latest news, updates and amazing
+                  offers.</p>
+              </div>
+              <form class="d-flex  footer-btn">
+                <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search">
+                <button class="btn footer_btn text-uppercase" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--  ====================== footer start here =================== -->
+  <footer class="bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">ABC</span> All Rights Reserved.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--  ====================== footer end here =================== -->
+
+
+  <div id="preloader"></div>
+
+
+  <!-- top to scrolling  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-3x fas fa-chevron-circle-up"></i></button>
+
+
+
+  <!--  JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <script>
+
+    AOS.init({
+      duration: 1200,
+    })
+
+  </script>
+
+  </section>
+</body>
+
+</html>

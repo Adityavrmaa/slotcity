@@ -1,0 +1,133 @@
+:root {
+  --mainheading: #9aa4bf;
+  --backgroundcolor: #1c1c1c;
+  --hover: #ddac17;
+  --white: #fff;
+  --all: #9c9c9c;
+  --footerbg: #1d2333;
+  --login-bg: #232a3e;
+  --btn-color: #5555ff;
+  --text-mute: #9aa4bf;
+  --footercolor: #dfdfdf;
+}
+
+.main_cart {
+  background-color: var(--login-bg);
+  margin: 2rem 0;
+  padding: 1.2rem;
+}
+
+/* .card_list {
+  padding: 1.2rem 0;
+} */
+
+.border-bottom {
+  border-bottom: 0.1px solid rgb(198 195 194 / 28%) !important
+}
+.custom-select {
+  background-color: transparent;
+  color: var(--mainheading);
+  border: 0.5px solid var(--btn-color);
+  padding: 5px 20px 5px 5px;
+  cursor: pointer;
+}
+
+.custom-select option {
+  background-color: transparent;
+  color: red;
+}
+.card_item_text > p {
+  font-size: 1rem;
+  color: rgba(0, 255, 0, 0.76);
+}
+.delete_btn {
+  color: var(--mainheading) !important;
+}
+
+.cart_select {
+  align-items: baseline;
+  cursor: pointer;
+}
+
+/* ----------------------- */
+
+.card_payament {
+  padding: 2rem 0;
+}
+
+.card_payament .wallet_icon .bi-credit-card-fill {
+  font-size: 3rem;
+  color: var(--btn-color);
+}
+.card_payament .wallet_icon {
+  border: 1px solid var(--btn-color);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card_payament .wallet_icon p {
+  color: var(--btn-color);
+}
+
+.coupon_container {
+  margin: 3rem 0;
+}
+
+.form-check-input[type="checkbox"] {
+  border: 1px solid var(--btn-color);
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: none;
+  cursor: pointer;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+}
+
+input[type="email"] {
+  border: 1px solid var(--mainheading) !important;
+}
+input[type="email"]:focus {
+  border: 1px solid var(--btn-color) !important;
+}
+
+.email_input .btn {
+  background-color: var(--btn-color) !important;
+}
+
+.email_input .btn:hover {
+  background-color: var(--footerbg) !important;
+}
+
+.form-check label {
+  font-size: 0.8rem;
+ color: var(--text-mute);
+}
+.form-check label a{
+ color: var(--btn-color);
+ text-decoration: underline;
+}
+
+.form-control {
+  height: auto;
+  box-shadow: none;
+}
+.coupon_inputbox button {
+  background-color: var(--btn-color);
+  width: 25%;
+}
+
+
+#header {
+
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}

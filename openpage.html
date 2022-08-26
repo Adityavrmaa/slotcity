@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SLOT CITY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- font awesome cdn link   -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- google fonts icons cdn  -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- bootstap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./other css/css/feather.css">
+  <link rel="stylesheet" href="./other css/css/style.css">
+
+  <link rel="stylesheet" href="./other css/css/video-player.css">
+  <style>
+    .ml-auto {
+      margin-left: auto;
+    }
+
+    .swiper-container {
+      overflow: hidden;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 480px) {
+      .swiper-container {
+        min-height: 320px;
+      }
+    }
+
+    .swiper-container-wrapper {
+      display: flex;
+      /* flex-flow: column nowrap; */
+      height: 100vh;
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .swiper-container-wrapper {
+        flex-flow: row nowrap;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      /* Center slide text vertically */
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: start;
+      /* Slide content */
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide-active .title {
+      opacity: 1;
+    }
+
+    .swiper-slide-active .title {
+      margin-bottom: 0rem;
+      /* font-size: 24px;
+      color: #000; */
+      transition: opacity 0.5s ease 0.5s;
+    }
+
+    .gallery-top {
+      position: relative;
+      width: 100%;
+      height: 75vh;
+    }
+
+    @media (min-width: 480px) {
+      .gallery-top {
+        width: 60%;
+        height: 70vh;
+        margin-right: 0px;
+      }
+    }
+
+    .gallery-thumbs {
+      width: 100%;
+      height: 25vh;
+      padding-top: 10px;
+    }
+
+    @media (min-width: 480px) {
+      .gallery-thumbs {
+        width: 30%;
+        height: 100vh;
+        padding: 0;
+      }
+    }
+
+    .gallery-thumbs .swiper-wrapper {
+      flex-direction: row;
+    }
+
+    @media (min-width: 480px) {
+      .gallery-thumbs .swiper-wrapper {
+        flex-direction: column;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      flex-flow: row nowrap;
+      height: 100%;
+      opacity: 0.75;
+      cursor: pointer;
+    }
+
+    @media (min-width: 480px) {
+      .gallery-thumbs .swiper-slide {
+        flex-flow: column nowrap;
+        width: 100%;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .left_img {
+      background-color: transparent !important;
+      justify-content: start;
+      height: 13% !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .title .image_slder {
+      height: 6rem !important;
+    }
+
+    .image_slder {
+      width: 10rem !important;
+    }
+
+    .left_slide_main {
+      margin-left: 20px;
+    }
+
+    .text_left {
+      text-align: start;
+      margin-left: 5px;
+    }
+
+    .text_left h6 {
+      color: #fff;
+    }
+
+    /* 15-01-2022 start css code */
+    .like-icon i {
+      font-style: normal;
+      padding: 0 7px;
+    }
+
+    .like-icon i>span {
+      padding: 0 3px;
+    }
+
+    .bi {
+      font-style: normal;
+    }
+    .video_selection_list{
+      cursor: pointer;
+    }
+
+    .commnats_count .sort_by i {
+      margin-left: 1.8rem;
+    }
+
+    .commnats_count .sort_by i span {
+      margin-left: 0.5rem;
+    }
+
+    .comment_input input {
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
+
+    .comment_like_dislike i {
+      padding: 0 8px;
+    }
+
+    .review_comments>p {
+      font-weight: lighter;
+    }
+
+    .review_comments h4 {
+      font-weight: bold;
+    }
+
+    .author_name p {
+      margin-bottom: 2px;
+      font-weight: lighter;
+    }
+
+    .small_button_swipe .swipe_scroll_btn {
+      color: white;
+      border-radius: 16px;
+    }
+
+    .swiper-button-next {
+      background-color: rgb(28 28 28);
+      padding: 0rem;
+      border-radius: 0 !important;
+      right: 0px !important;
+    }
+
+    .swiper-button-prev {
+      background-color: rgb(28 28 28);
+      padding: 0rem;
+      border-radius: 0 !important;
+      left: 0 !important;
+    }
+  
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 20px !important;
+    }
+
+    /* update on 23-01  */
+
+      .button-slider .swiper-slide .btn-slider-design{
+       border: 1px solid rgb(83, 80, 238);
+       border-radius: 15px;
+       padding: 4px 13px;
+      }
+          .swiper-slide{
+          margin: 2px;
+          }
+
+          .swiper-slide{
+        width: auto!important;
+        cursor: pointer;
+
+          }
+    /* ---------22-01------------------- */
+    @media (max-width: 768px) { 
+      .left-video .embed-responsive iframe{
+        height: 500px!important;
+    }
+     }
+    @media (max-width: 576px) {
+    .left-video .embed-responsive iframe{
+        height: 300px!important;
+    }
+    .description  h1{
+      font-size: 1.2rem!important;
+    }
+
+    .icons-section{
+      display: block!important;
+    }
+.like-icon{
+  display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+    .like-icon i >span{
+      display: block!important;
+    }
+
+    .swiper-slide{
+        width: auto!important;
+        margin: 8px;
+
+          }
+    /* update on 23-01  */
+
+  }
+
+   
+  </style>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header id="header">
+
+    <nav class="navbar d-flex navbar-expand-lg" id="navbar">
+      <div class="container">
+
+        <a class="navbar-brand"> <img src="./assets/img/logo.png" width="150px" alt="logo" id="logo"> </a>
+        <span class="Mobile_sidenav" onclick="openNav()"><i class="d-block bi bi-list"></i> </span>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+          <form class="d-flex search_header ">
+            <input class="form-control " type="search" placeholder="Slot Game ?" aria-label="Search">
+            <button class="btn  text-uppercase" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+            <li class="nav-item">
+
+              <a class="nav-link p-0 active" aria-current="page" href="./login.html"><i
+                  class="bi bi-list-check d-block"></i>My purchases</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link p-0" href="./Favorites.html"> <i class="bi bi-heart d-block"></i>Favorites</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link p-0" href="AddToCart.html"> <i class="bi bi-cart-plus d-block"></i>Cart</a>
+            </li>
+            <li class="d-grid align-items-center signin_btn">
+              <a href="login.html"> <button type="button " class="px-4 py-2 btn btn-primary rounded-0">Sign
+                  In</button></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- first navbar start   -->
+
+
+
+
+    <!-- second nav start    -->
+    <nav class="second_nav navbar navbar-expand-md">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="product.html">Store</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="slotTv.html">Slots Tv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Help Center</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-hover="dropdown">
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Russian</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">Chinese</a></li>
+                <li><a class="dropdown-item" href="#">Greek</a></li>
+                <li><a class="dropdown-item" href="#">Italion</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- end second navbar  -->
+
+
+  <!-------------------- mobile view code --------------------------------------->
+  <div id="mySidenav" class="sidenav" style="z-index: 99999;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link  " href="login.html">Sign In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="product.html">Product</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="slotTv.html">Slots Tv</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="membership.html">Membership</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="SocialGaming.html"> Social Gaming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./Favorites.html"> Favorites</a>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" data-hover="dropdown">
+          Language
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">Russian</a></li>
+          <li><a class="dropdown-item" href="#">Arabic</a></li>
+          <li><a class="dropdown-item" href="#">Chinese</a></li>
+          <li><a class="dropdown-item" href="#">Greek</a></li>
+          <li><a class="dropdown-item" href="#">Italion</a></li>
+          <li><a class="dropdown-item" href="#">French</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <!-------------------- mobile view code --------------------------------------->
+  <!-- ============================================================================================================================================================ -->
+
+
+
+  <!-- =-================= youtube video start here ==================== -->
+ 
+  <!-- youtube like html code without selecting  -->
+  <div class="main-wrapper" style="margin-top: 12rem;">
+     <!-- ======= Intro Single ======= -->
+    <section class="intro-single product_top">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+            <div class="title-single-box">
+              <h1 class="title-single">Slot Video</h1>
+              <!-- <span class="color-text-a">Grid Properties</span> -->
+            </div>
+       
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end bg-transparent">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Slot Tv
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+    <div class="container">
+      <h1 class="my-4">Lorem ipsum dolor sit.</h1>
+      <div class="row">
+        <div id="right-side" class="col-md-8 col-sm-12">
+          <div class="left-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="100%" height="530" src="https://www.youtube.com/embed/RDLg-p6PdTA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="description mt-3">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, deserunt.</h1>
+          </div>
+          <div class="icons-section d-flex justify-content-between align-items-center">
+            <div class="">
+              <p>1,525 view &nbsp; . &nbsp; 15 Jan 2022</p>
+            </div>
+
+            <div class="like-icon py-4">
+              <i class="bi bi-hand-thumbs-up font-initial"> <span>LIKE</span> </i>
+              <i class="bi bi-share-fill"> <span>SHARE</span> </i>
+              <i class="bi bi-hand-thumbs-down"> <span>DISLIKE</span> </i>
+              <i class="bi bi-currency-dollar"> <span>HELP</span></i>
+              <i class="bi bi-cloud-download-fill"> <span>SAVE</span></i>
+            </div>
+          </div>
+          <hr>
+          <div class="video_summary">
+            <div class="video_title">
+              <div class="author_section">
+                <div class="row">
+
+                  <div class="col-md-1">
+                    <img src="assets/img/user.png" alt="" class="rounded img-fluid" alt="Cinque Terre" />
+                  </div>
+
+                  <div class="col-md-11">
+                    <div class="d-flex justify-content-between">
+                      <div class="">
+                        <h3>slot city game</h3>
+                        <p class="fw-lighter">lorem sdfsdf</p>
+                      </div>
+
+                      <div class="sub-button">
+                        <button class="btn btn-info text-white">SUBSCRIBED </button>
+                      </div>
+                    </div>
+                    <div class="tag_line">
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quasi ea dolorem esse
+                        excepturi
+                        labore nostrum mollitia voluptate velit rerum, quae beatae necessitatibus suscipit omnis non
+                        nesciunt,
+                        qui magnam harum!</h6>
+                    </div>
+                    <div class="show_more_detail">
+                      <button class="btn bg-transparent text-white p-0 pt-3" style="border: none!important;">SHOW MORE
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- comments section start  -->
+          <div class="video_commants_section">
+            <div class="top_section">
+              <div class="commnats_count d-flex ">
+                <div class="">
+                  <p>147 &nbsp Commants</p>
+                </div>
+                <div class="sort_by mr-5">
+                  <i class="bi bi-list-nested"> <span> SORT BY </span></i>
+                </div>
+              </div>
+
+
+              <div class="input_commant">
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img class="img-fluid" src="assets/img/user.png" alt="">
+                  </div>
+                  <div class="col-lg-11">
+                    <div class="comment_input">
+                      <input type="text" class="form-control" placeholder="Add a public comment...">
+                    </div>
+                    <div class="button_input_comment d-flex justify-content-between align-items-center">
+                      <div class="">
+                        <i class="bi bi-emoji-smile"></i>
+                      </div>
+                      <div class="mt-2">
+                        <button class="btn text-white"> CANCLE</button>
+                        <button class="btn text-white bg-info"> COMMENT</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="main_commants_box mt-4">
+                  <div class="comments_main_secation">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <img class="img-fluid" src="assets/img/user.png" alt="">
+                        
+                      </div>
+                      <!-- review  comments  -->
+                      <div class="col-md-11">
+                        <div class="review_comments">
+                          <h4>FactsReal <span class="comment_time"> 12 Days ago </span></h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore nulla corporis id
+                            perferendis.</p>
+                        </div>
+
+                        <div class="comment_like_dislike">
+                          <i class="bi bi-hand-thumbs-up font-initial"> <span>LIKE</span> </i>
+                          <i class="bi bi-hand-thumbs-down"> <span>DISLIKE</span> </i>
+                          <button class="btn text-white" style="border: none!important;">REPLY</button>
+                        </div>
+                      </div>
+                      <!-- review  comments  -->
+
+                    </div>
+                    <!-- comments section start  -->
+                    <div class="row mt-3">
+                      <div class="col-md-1">
+                        <img class="img-fluid" src="assets/img/user.png" alt="">
+                      </div>
+                      <!-- review  comments  -->
+                      <div class="col-md-11">
+                        <div class="review_comments">
+                          <h4>FactsReal <span class="comment_time"> 12 Days ago </span></h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore nulla corporis id
+                            perferendis.</p>
+                        </div>
+
+                        <div class="comment_like_dislike">
+                          <i class="bi bi-hand-thumbs-up font-initial"> <span>LIKE</span> </i>
+                          <i class="bi bi-hand-thumbs-down"> <span>DISLIKE</span> </i>
+                          <button class="btn text-white" style="border: none!important;">REPLY</button>
+                        </div>
+                      </div>
+                      <!-- review  comments  -->
+
+                    </div>
+                    <!-- comments section end  -->
+                    <!-- comments section start  -->
+                    <div class="row mt-3">
+                      <div class="col-md-1">
+                        <img class="img-fluid" src="assets/img/user.png" alt="">
+                      </div>
+                      <!-- review  comments  -->
+                      <div class="col-md-11">
+                        <div class="review_comments">
+                          <h4>FactsReal <span class="comment_time"> 12 Days ago </span></h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore nulla corporis id
+                            perferendis.</p>
+                        </div>
+
+                        <div class="comment_like_dislike">
+                          <i class="bi bi-hand-thumbs-up font-initial"> <span>LIKE</span> </i>
+                          <i class="bi bi-hand-thumbs-down"> <span>DISLIKE</span> </i>
+                          <button class="btn text-white" style="border: none!important;">REPLY</button>
+                        </div>
+                      </div>
+                      <!-- review  comments  -->
+
+                    </div>
+                    <!-- comments section end  -->
+                    <!-- comments section start  -->
+                    <div class="row mt-3">
+                      <div class="col-md-1">
+                        <img class="img-fluid" src="assets/img/user.png" alt="">
+                      </div>
+                      <!-- review  comments  -->
+                      <div class="col-md-11">
+                        <div class="review_comments">
+                          <h4>FactsReal <span class="comment_time"> 12 Days ago </span></h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore nulla corporis id
+                            perferendis.</p>
+                        </div>
+
+                        <div class="comment_like_dislike">
+                          <i class="bi bi-hand-thumbs-up font-initial"> <span>LIKE</span> </i>
+                          <i class="bi bi-hand-thumbs-down"> <span>DISLIKE</span> </i>
+                          <button class="btn text-white" style="border: none!important;">REPLY</button>
+                        </div>
+                      </div>
+                      <!-- review  comments  -->
+
+                    </div>
+                    <!-- comments section end  -->
+                    <!-- comments section start  -->
+                    <div class="row mt-3">
+                      <div class="col-md-1">
+                        <img class="img-fluid" src="assets/img/user.png" alt="">
+                      </div>
+                      <!-- review  comments  -->
+                      <div class="col-md-11">
+                        <div class="review_comments">
+                          <h4>FactsReal <span class="comment_time"> 12 Days ago </span></h4>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro tempore nulla corporis id
+                            perferendis.</p>
+                        </div>
+
+                        <div class="comment_like_dislike">
+                          <i class="bi bi-hand-thumbs-up font-initial"> <span>LIKE</span> </i>
+                          <i class="bi bi-hand-thumbs-down"> <span>DISLIKE</span> </i>
+                          <button class="btn text-white" style="border: none!important;">REPLY</button>
+                        </div>
+                      </div>
+                      <!-- review  comments  -->
+
+                    </div>
+                    <!-- comments section end  -->
+
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+          </div>
+          <!-- comments section start  -->
+
+        </div>
+
+        <!-- right side video section  -->
+        <div id="right-side" class="col-md-4 col-sm-12 ">
+          <div class="row">
+
+            <!-- ============================================================================== -->
+            <!-- <div class="swiper mySwiper mb-4">
+              <div class="swiper-wrapper small_button_swipe">
+                <div class="swiper-slide"> <button class="btn swipe_scroll_btn" style="margin-right: -39px; padding: 6px 17px;">All</button></div>
+                <div class="swiper-slide"><button class="btn swipe_scroll_btn">Related</button></div>
+                <div class="swiper-slide"><button class="btn swipe_scroll_btn">Watched</button></div>
+                <div class="swiper-slide"><button class="btn swipe_scroll_btn">Most Like</button></div>
+                <div class="swiper-slide"><button class="btn swipe_scroll_btn">Loved</button></div>
+                <div class="swiper-slide"><button class="btn swipe_scroll_btn" style="margin-left:-30px!important;" >More</button></div>
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div> -->
+
+            <div class="container my-4 ">
+              <div class="swiper" id="swipeVideoTab">
+                <div class="swiper-wrapper button-slider">
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Related</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Watched</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Loved</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">More</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">New Game</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Action Gane</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Racing</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Slot Game</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Soft</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white">Daily</a></div>
+                  <div class="swiper-slide"><a class="btn-slider-design text-white ">Dash</a></div>
+                
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <!-- =============================================================================== -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12 col-sm-12">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12 ">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12 ">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12 ">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+            <!-- small left video selection col  -->
+            <div class="col-lg-12">
+              <div class="row mb-3 video_selection_list">
+                <div class="col-lg-5 col-xs-12 col-sm-5">
+                  <img src="assets/img/gameimg/1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="video_selection_text">
+                    <p class="mb-0">Lorem, ipsum dolor.</p>
+                    <p class="mb-0 fw-lighter">sdgfdsfgd</p>
+                  </div>
+                  <div class="author_name mt-1">
+                    <p> 16K views . 12 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- small left video selection col  end -->
+
+
+
+
+
+
+
+          </div>
+        </div>
+        <!-- right side video section end  -->
+
+      </div>
+    </div>
+  </div>
+<!-- youtube like html code without selecting  -->
+
+
+  <!-- navigation -->
+
+  
+
+<footer class="bg-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="socials-a">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright-footer">
+          <p class="copyright color-text-a">
+            &copy; Copyright
+            <span class="color-a">ABC</span> All Rights Reserved.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer><!-- End  Footer -->
+
+
+
+
+<!-- top to scrolling  -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-3x fas fa-chevron-circle-up"></i></button>
+
+
+
+<!--  JS Files -->
+<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!--  Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+  AOS.init({
+    duration: 1200,
+  })
+
+</script>
+<script src="other css/js/scripts.js"></script>
+<script src="other css/js/plugin.js"></script>
+<script src="other css/js/video-player.js"></script>
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+
+// youtube video slider button tab  
+
+const swiper = new Swiper("#swipeVideoTab", {
+  slidesPerGroup: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  speed: 400,
+  slidesPerView: 5,
+
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 20
+    },
+  },
+});
+
+// youtube video slider button tab  
+</script>
+</body>
+
+</html>

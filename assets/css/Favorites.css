@@ -1,0 +1,94 @@
+:root {
+    --mainheading: #9aa4bf;
+    --backgroundcolor: #1c1c1c;
+    --hover: #ddac17;
+    --white: #fff;
+    --all: #9c9c9c;
+    --footerbg: #1d2333;
+    --login-bg: #232a3e;
+    --btn-color: #5555ff;
+    --text-mute: #9aa4bf;
+    --footercolor: #dfdfdf;
+  }
+  
+  
+  p{
+    margin: 0.3rem 0;
+  }
+  .video_image{
+  position: relative;
+  }
+  
+  .video_image::after{
+  
+    /* content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/play-circle-solid.svg");
+    background-size: 50px 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; */
+    cursor: pointer;
+  }
+  
+  
+  
+  .modal-content {
+  
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+  }
+  
+  .icon-box{
+    margin: 2rem 0;
+  }
+  
+  .playvideo{
+    margin: 2rem;
+  }
+  
+  .modal-header {
+    border-bottom: 0!important;
+  }
+  .bottom_head p{
+    font-size: 1rem;
+    font-weight: normal;
+  
+  }
+  
+  .bottom_head h5{
+    font-weight: bold;
+  
+  }
+  .bottom_head div > i{
+    color: #e59819;
+    cursor: pointer;
+  }
+  
+  .bottom_head > h4{
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+  }
+  
+  .bottom_head h4 > s{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color:var(--text-mute);
+  }
+  
+  
+  #header {
+  
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }

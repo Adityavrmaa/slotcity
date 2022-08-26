@@ -1,0 +1,38 @@
+.video_image{
+    position: relative;
+    }
+    
+    .video_image::after{
+    
+      content: "";
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-image: url("../play-circle-solid.svg");
+      background-size: 50px 50px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+    
+    
+    .modal-content {
+    
+    
+      background-color: transparent;
+      background-clip: padding-box;
+      border: none;
+      border-radius: 0;
+      outline: 0;
+    }
+    
+    #header {
+
+      transition: 0.4s;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+    }

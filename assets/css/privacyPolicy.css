@@ -1,0 +1,28 @@
+:root {
+    --mainheading: #9aa4bf;
+    --backgroundcolor: #1c1c1c;
+    --hover: #ddac17;
+    --white: #fff;
+    --all: #9c9c9c;
+    --footerbg: #1d2333;
+    --login-bg: #232a3e;
+    --btn-color: #5555ff;
+    --text-mute: #9aa4bf;
+    --footercolor: #dfdfdf;
+  }
+
+
+  p{
+      color: var(--mainheading)!important;
+      line-height: 1.5!important;;
+  }
+
+
+  #header {
+
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
